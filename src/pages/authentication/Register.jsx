@@ -10,12 +10,12 @@ function Register() {
             <header>
                 <h1 className=" text-center text-2xl font-semibold py-2 mb-2">Create An Account</h1>
             </header>
-            <aside className=' mx-5 rounded-lg flex items-center justify-evenly gap-7 py-1 px-3 capitalize bg-gray-100 font-medium text-xl'>
+            <aside className=' cursor-default mx-5 rounded-lg flex items-center justify-evenly gap-7 py-1 px-3 capitalize bg-gray-100 font-medium text-xl'>
                 {
                     option.map((eachOption,index)=>{
                         return(
                             <div key={index} onClick={()=>{ setSelectedOption(index)}} className={`${selectedOption===index && " transition-all bg-[#00A86B] text-white shadow-sm "}  py-1 px-6 rounded-lg`} >
-                                <p>{eachOption}</p>
+                                <p className=" cursor-default" >{eachOption}</p>
                             </div>
                         )
                     })

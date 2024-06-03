@@ -9,7 +9,7 @@ function Newly_Arrived() {
         <div className=' space-y-3 py-5 px-2'>
             <Headings heading={"Newly Arrived Products"}/>
             <section>
-                <ProductsDisplay data={flowersData} sliceStart={8} sliceEnd={14}/>
+                <ProductsDisplay data={flowersData} sliceStart={8} sliceEnd={13}/>
             </section>
         </div>
         <br />

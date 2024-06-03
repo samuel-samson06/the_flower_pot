@@ -8,8 +8,9 @@ import Register from './pages/authentication/Register'
 import Login from './pages/authentication/Login'
 import ProductPageLayout from './pages/layout/ProductPageLayout'
 import Product from './pages/products/Product'
-import OtherPages from './pages/layout/OtherPages'
 import Contact from './pages/contact/Contact'
+import Cart from "./pages/cart/Cart"
+import SellerLayout from "./pages/seller/layout/SellerLayout"
 function FlowerPot() {
   return (
     <BrowserRouter>
@@ -17,12 +18,13 @@ function FlowerPot() {
             <Route element={<HomePageLayout/>}>
                 <Route index path='/' element={<Home/>}/>
                 <Route path='/products' element={<Products/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/cart" element={<Cart/>}/>
+            </Route>
+            <Route element={<SellerLayout/>}>
             </Route>
             <Route element={<ProductPageLayout/>}>
               <Route path=':id' element={<Product/>}/>
-            </Route>
-            <Route element={<OtherPages/>}>
-              <Route path='/contact' element={<Contact/>}/>
             </Route>
             <Route path="/auth"  element={<AuthLayout/>}>
               <Route path='login' element={<Login/>}/>

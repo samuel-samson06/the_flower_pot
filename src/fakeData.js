@@ -187,6 +187,10 @@ export const testimonials = [
     image:testimonial,
     name:'Mastiff Paul Caul',
     testimonial:'The stores here are so so unique and very affordable even in our current economy '
+  },{
+    image:testimonial,
+    name:'Mastiff stan Caul',
+    testimonial:'The stores here are so so unique and very affordable even in our current economy '
   }
 ]
   
@@ -230,5 +234,12 @@ export const promotions = [
         about:"Very Very Beautiful Flower",
         price:3456,
         image:flower4
+    }
+    ,{
+        id:1,
+        flower_name:"Esplaine",
+        about:"Very Very Beautiful Flower",
+        price:3456,
+        image:flower2
     }
 ]

@@ -5,6 +5,7 @@ import {AiOutlineHome} from "react-icons/ai"
 import {GoPackage} from "react-icons/go"
 import {FcAbout}from "react-icons/fc"
 import { NavLink, useLocation } from 'react-router-dom'
+import Categories from './Categories'
 
 
 
@@ -30,37 +31,17 @@ const navigation_pages=[{
   page:'Account',
 }]
 
-const categories = [
-  {
-    category:'all'
-  },
-  {
-    category:'plants'
-  },
-  {
-    category:'bouquets'
-  },
-  {
-    category:'gifts'
-  },
-  {
-    category:'roses' 
-  },
-  {
-    category:'ferns'
-  }
-]
 
 function Navigation({closeNavBar}) {
   const current_location = useLocation()
   return (
     <React.Fragment>
-      <div className=' text-black  bg-gray-100 h-full bg-transparent flex w-screen  mx-0'>
+      <div className=' text-black sm:hidden  bg-gray-100 h-full bg-transparent flex w-screen  mx-0'>
         <div className=' relative pb-5 w-3/4 overflow-scroll bg-[#fff]'>
           <section className=''>
             <header className=' px-4 py-2 items-center flex justify-between  text-white bg-[#00A86B]'>
               <p>The Logo</p>
-              <p className=' text-3xl' onClick={closeNavBar}>×</p>
+              <p className=' cursor-default text-3xl' onClick={closeNavBar}>×</p>
             </header>
             <main className=' flex flex-col gap-4 text-lg pt-3  text-zinc-800'>
               {
@@ -78,17 +59,9 @@ function Navigation({closeNavBar}) {
             </main>
             <section className=' border-t-[1px] py-3 px-2 border-gray-300'>
               <p className=' font-semibold text-lg pt-2 pb-1'>Categories</p>
-              <main className=' px-4 space-y-2 capitalize'>
-                {
-                  categories.map(function(eachCategory,index){
-                    return(
-                      <div key={index+"9978#"}>
-                        <p>{eachCategory.category}</p>
-                      </div>
-                    )
-                  })
-                }
-              </main>
+              <div className=' sm:hidden'>
+                <Categories/>
+              </div>
             </section>
           </section>
         </div>

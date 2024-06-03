@@ -7,7 +7,7 @@ function HomePageLayout() {
   return (
     <React.Fragment>
         <div className=' flex flex-col min-h-screen'>
-            <header>
+            <header className=' sm:pb-11'>
                 <Header/>
                 <br /><br /><br />
             </header>

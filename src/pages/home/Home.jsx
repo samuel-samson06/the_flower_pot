@@ -9,7 +9,7 @@ import TopSellers from './TopSellers'
 function Home() {
   return (
     <React.Fragment>
-        <div className=" px-2">
+        <div className=" overflow-hidden">
           <section>
             <Slides/>
           </section>

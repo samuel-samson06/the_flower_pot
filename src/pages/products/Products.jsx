@@ -2,7 +2,6 @@ import React from 'react'
 import { flowersData } from '../../fakeData'
 import ProductsDisplay from '../../components/ProductsDisplay'
 import BestSeller from './BestSeller'
-
 function Products() {
   return (
     <React.Fragment>
@@ -10,10 +9,15 @@ function Products() {
             <section>
                 <BestSeller/>
             </section>
-            <div>
-                <p className=" px-3 font-semibold pt-3 pb-1">Products</p>
+            <div className=' flex flex-col px-5'>
+                <p className="font-semibold text-base sm:text-lg pt-5 pb-2">Products</p>
                 <ProductsDisplay data={flowersData}/>
+                <br />
             </div>
+            <section>
+                <BestSeller/>
+            </section>
+            <br />
         </div>
     </React.Fragment>
   )

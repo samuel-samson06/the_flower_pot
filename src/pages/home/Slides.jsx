@@ -56,24 +56,24 @@ function Slides() {
   return (
     <React.Fragment>
       <div>
-        <div className=" h-[150px] rounded-md">
-          <Slider {...settings} className="">
-            <div className="border-l-[4px] border-white border-r-[4px] bg-gradient-to-t from-[#6A941E] to-[#B6CE60] h-[150px] px-1 rounded-md text-white font-semibold ">
-              <div className="flex items-center h-full">
-                <img src={slide1} className=" w-28" alt=" sliders" />
-                <p className=" text-xs">Flower Pot has made it easier to buy plants and flowers online by upping the standard.</p>
+        <div className=" h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px] rounded-md">
+          <Slider {...settings}>
+            <div className="border-l-[4px] border-white border-r-[4px] bg-gradient-to-t from-[#6A941E] to-[#B6CE60] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px] px-1 rounded-md text-white font-semibold ">
+              <div className="flex items-center md:justify-evenly h-full">
+                <img src={slide1} className=" w-28 min-[500px]:w-32 sm:w-36 md:w-44 lg:w-48" alt=" sliders" />
+                <p className=" text-xs min-[500px]:text-base md:text-xl">Flower Pot has made it easier to buy plants and flowers online by upping the standard.</p>
               </div>
             </div>
-            <div className=" border-l-[4px] border-white border-r-[4px] bg-gradient-to-t from-[#6A941E] to-[#B6CE60] h-[150px] px-1 rounded-md text-white font-semibold ">
-              <div className="flex items-center h-full">
-                <img src={slide2} className=" w-28" alt=" sliders" />
-                <p className=" text-xs">Explore Flower Plants curated list of green plants and enjoy <br /> the online plant shopping experience.</p>
+            <div className=" border-l-[4px] border-white border-r-[4px] bg-gradient-to-t from-[#6A941E] to-[#B6CE60] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px] px-1 rounded-md text-white font-semibold ">
+              <div className="flex items-center md:justify-evenly h-full">
+                <img src={slide2} className=" w-28 min-[500px]:w-32 sm:w-36 md:w-44 lg:w-48" alt=" sliders" />
+                <p className=" text-xs min-[500px]:text-base md:text-xl">Explore Flower Plants curated list of green plants and enjoy <br /> the online plant shopping experience.</p>
               </div>
             </div>
-            <div className='border-l-[4px] border-white border-r-[4px] bg-gradient-to-t from-[#6A941E] to-[#B6CE60] h-[150px] px-1 rounded-md text-white font-semibold '>
-              <div className=" flex items-center h-full">
-                <img src={slide3} className=" w-28" alt=" sliders" />
-                <p className=" text-xs">Plants are a great addition to our homes and life for both their physical and psychological benefits. </p>
+            <div className='border-l-[4px] border-white border-r-[4px] bg-gradient-to-t from-[#6A941E] to-[#B6CE60] h-[150px] sm:h-[200px] md:h-[250px] lg:h-[300px] px-1 rounded-md text-white font-semibold '>
+              <div className=" flex items-center md:justify-evenly h-full">
+                <img src={slide3} className=" w-28 min-[500px]:w-32 sm:w-36 md:w-44 lg:w-48" alt=" sliders" />
+                <p className=" text-xs min-[500px]:text-base md:text-xl">Plants are a great addition to our homes and life for both their physical and psychological benefits. </p>
               </div>
             </div>
           </Slider>

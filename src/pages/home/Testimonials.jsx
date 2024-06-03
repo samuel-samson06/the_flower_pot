@@ -7,7 +7,7 @@ function Testimonials() {
     <React.Fragment>
       <div className=' px-5 space-y-2'>
         <Headings heading={"Testimonials"}/>
-        <div className=' flex flex-col gap-6 px-3 '>
+        <div className=' grid min-[500px]:grid-cols-2  md:grid-cols-4  gap-6 px-3 '>
           {
             testimonials.map((eachTestimonial,index)=>{
               return(
